@@ -1,0 +1,12 @@
+progress {
+    border: none;
+    width: 100%;
+    background: whitesmoke;
+  }
+  progress::-webkit-progress-value {
+    background: #C66C49;
+  }
+  
+  progress::-webkit-progress-bar {
+    background: #F5D6AB;
+  }

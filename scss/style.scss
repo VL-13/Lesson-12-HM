@@ -1,0 +1,24 @@
+@import '_reset.scss';
+@import '_theme.scss';
+@import '_text-format';
+@import '_progress-bar.scss';
+
+@font-face {
+    font-family: 'Libre Franklin', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap); }
+
+    @import'_mixins.scss';
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    @include generate-columns-tablet();
+    @include generate-columns-desktop();
+    
